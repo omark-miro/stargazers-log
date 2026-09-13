@@ -3,9 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Stargazers log</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Stargazers log</h1>
-    <p>A log of the repositories I've starred.</p>
+    <main>
+      <p class="eyebrow">Personal archive / 2026</p>
+      <h1>Repositories worth keeping close.</h1>
+      <p class="intro">A living log of the tools, frameworks, and ideas that have earned a star.</p>
+      <p id="status" class="status">Loading starred repositories...</p>
+      <ol id="repo-list" class="repo-list" aria-live="polite"></ol>
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>

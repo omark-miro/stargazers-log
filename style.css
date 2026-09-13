@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  color: #17211b;
+  background: #e9f0e7;
+  font-family: 'Space Grotesk', sans-serif;
+  font-synthesis: none;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+main {
+  width: min(100% - 2rem, 900px);
+  margin: 0 auto;
+  padding: 4rem 0 5rem;
+}
+
+.eyebrow,
+.repo-meta,
+.repo-number {
+  font-family: 'DM Mono', monospace;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  color: #56705a;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+h1 {
+  max-width: 680px;
+  margin: 0;
+  color: #173b27;
+  font-size: clamp(2.5rem, 8vw, 5.75rem);
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+}
+
+.intro {
+  max-width: 530px;
+  margin: 1.5rem 0 3rem;
+  color: #506153;
+  font-size: 1.1rem;
+}
+
+.repo-list {
+  display: grid;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.repo-card {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1.25rem;
+  align-items: start;
+  padding: 1.35rem;
+  border: 1px solid #bfd0bb;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.58);
+  box-shadow: 0 8px 24px rgba(42, 74, 48, 0.06);
+  transition: border-color 160ms ease, transform 160ms ease, background 160ms ease;
+}
+
+.repo-card:hover {
+  border-color: #63836a;
+  background: #fff;
+  transform: translateY(-2px);
+}
+
+.repo-number {
+  color: #86a18a;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.repo-name {
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+
+.repo-name a {
+  color: #173b27;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+.repo-name a:hover {
+  color: #ba541f;
+}
+
+.repo-description {
+  margin: 0.45rem 0 0.85rem;
+  color: #506153;
+}
+
+.repo-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  color: #6a796b;
+  font-size: 0.7rem;
+}
+
+.repo-meta span + span::before {
+  margin-right: 0.75rem;
+  content: '/';
+  color: #adc0ad;
+}
+
+.repo-stars {
+  color: #ba541f;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.status {
+  padding: 1rem;
+  border-left: 3px solid #ba541f;
+  color: #506153;
+}
+
+@media (max-width: 620px) {
+  main {
+    padding-top: 2.5rem;
+  }
+
+  .repo-card {
+    grid-template-columns: auto 1fr;
+  }
+
+  .repo-stars {
+    grid-column: 2;
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "astro",
+    "full_name": "withastro/astro",
+    "description": "The web framework for content-driven websites.",
+    "language": "TypeScript",
+    "stars": 49200,
+    "url": "https://github.com/withastro/astro",
+    "starred_at": "2026-09-08"
+  },
+  {
+    "name": "ruff",
+    "full_name": "astral-sh/ruff",
+    "description": "An extremely fast Python linter and code formatter.",
+    "language": "Rust",
+    "stars": 42000,
+    "url": "https://github.com/astral-sh/ruff",
+    "starred_at": "2026-08-22"
+  },
+  {
+    "name": "htmx",
+    "full_name": "bigskysoftware/htmx",
+    "description": "HTML extensions for modern web development.",
+    "language": "JavaScript",
+    "stars": 44000,
+    "url": "https://github.com/bigskysoftware/htmx",
+    "starred_at": "2026-07-14"
+  },
+  {
+    "name": "just",
+    "full_name": "casey/just",
+    "description": "A handy way to save and run project-specific commands.",
+    "language": "Rust",
+    "stars": 24000,
+    "url": "https://github.com/casey/just",
+    "starred_at": "2026-06-03"
+  }
+]
